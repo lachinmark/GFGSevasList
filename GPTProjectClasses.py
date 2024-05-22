@@ -27,5 +27,6 @@ if __name__ == '__main__':
     book = Bookstore(title='Dune', author='Herbert', price=18)
 
     book.addbook()
+    book.displaybooks()
 
-    book.search('Dune')
+    # book.search('Dune')

@@ -9,8 +9,13 @@ def lambdasquares(listnums):
     print(list2)
 
 # Write a lambda function that takes a list of strings and returns a list of the strings reversed.
-def lambdarevstr(liststr):
+def lambdarevlists(liststr):
     list2 = list(map(lambda x : x[::-1], liststr))
+    print(list2)
+
+def lambdarevstr(str1):
+    strlist = str1.split(' ')
+    list2 = ' '.join(list(map(lambda x : x[::-1], strlist)))
     print(list2)
 
 # Write a lambda function that takes a list of strings and filters out the strings that are not palindromes.
@@ -31,8 +36,11 @@ if __name__ == '__main__':
     listnums = [1, 2, 3, 4]
     lambdasquares(listnums)
 
+    str1 = 'will be in place'
+    lambdarevstr(str1)
+
     liststr = ['hello', 'world']
-    lambdarevstr(liststr)
+    lambdarevlists(liststr)
 
     listpalin = ['radar', 'level', 'world', 'python']
     lambdapalin(listpalin)
