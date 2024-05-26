@@ -22,4 +22,4 @@ def duplchars2(str1):
 
 if __name__ == '__main__':
     str1 = 'geeksforgeeeks'
-    duplchars2(str1)
+    duplchars(str1)
