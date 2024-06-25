@@ -1,18 +1,13 @@
 # https://www.geeksforgeeks.org/python-find-duplicate-characters-string/#
 def duplchars(str1):
+    set1 = set()
     list1 = list(str1)
-    # print(list1)
 
     for x in list1:
-        print(list1)
         list1.remove(x)
-        set1 = set()
-        print(list1)
         if x in list1:
             set1.add(x)
-
-    print(set1)
-    # Not sure why this is not working
+    print(' '.join(set1))
 
 
 def duplchars2(str1):
